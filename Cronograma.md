@@ -6,19 +6,19 @@
 * Ibel Carri
 * Emilio Fenoy
 
-## Monday 25 : 14:30 to 18:00
-* Generalidades de NGS
-* Introducción a linux
+## Lunes 25 : 14:30 - 18:00
+* Generalidades de NGS.
+* Introducción a linux.
 * Formato FASTA-FASTQ. Análisis de calidad de secuencias.
 * Formato SAM. Mapeo a genoma de referencia.
 
-## Tuesday 26 : 14:30 to 18:00
+## Martes 26 : 14:30 - 18:00
 * Formato VCF. Detección de SNP, SNV e INDELs con GATK. Visualización con IGV.
-* MODApy: a filtering and annotation VCFs Tool for Variant Analysis (Juan Carlos Vazquez)
+* MODApy: herramienta de filtrado y anotación de VCFs para análisis de variantes.
 
-## Wednesday 26: 9:00 to 12:00 and 14:30 to 18
-* Introduction to Protein Structure Prediction
+## Miercoles 26: 9:00 - 12:00 & 14:30 - 18:00
+* Introducción a la predicción de estructuras de proteínas.
 * Predicción de variantes inmunogénicas con MuPeXi. Priorización de neopéptidos candidatos.
 
-## Thursday: 9 to 12:00 and 14:30 to 17 (Fabio)
-* Introduction to Deep Learning and its application to neoepitope prediction
+## Jueves 27 : 9:00 - 12:00 & 14:30 - 17:00
+* Introducción a Deep Learning y su aplicación a la predicción de neoepítopes.
