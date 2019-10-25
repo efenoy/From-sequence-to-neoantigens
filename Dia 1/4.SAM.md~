@@ -18,22 +18,22 @@ bwa mem -M -R $ReadGroupID $REFF TCRBOA2-N-WEX-chr22_1.fastq.gz TCRBOA2-N-WEX-ch
 5. Marcar duplicados con el siguiente comando
 java -jar /home/seminario/Escritorio/Programas/picard.jar MarkDuplicates INPUT=normal.bam OUTPUT=normal.dedup.bam METRICS_FILE=normal.metrics.txt
 
-6. ¿Qué significa cada parte del comando?
+. ¿Qué significa cada parte del comando?
 
-7. ¿Qué tipos de duplicados pueden haber y cuál es la utilidad del etiquetado?
+. ¿Qué tipos de duplicados pueden haber y cuál es la utilidad del etiquetado?
 
-8. Generar índice de nuestro archivo bam utilizando samtools (explorar las opciones con el manual)
+. Generar índice de nuestro archivo bam utilizando samtools (explorar las opciones con el manual)
 
-9. Recalibrar los valores de calidad con el siguiente comando:
+. Recalibrar los valores de calidad con el siguiente comando: 
 gatk BaseRecalibrator --reference ${HREFF} --input normal.dedup.bam --known-sites ${SREFF} --known-sites ${IREFF} --output normal.recal.table
 
-10. Describir el tipo de información que contiene cada uno de los archivos de input del comando de recalibración.
+. Describir el tipo de información que contiene cada uno de los archivos de input del comando de recalibración.
 
-11. Obtener archivo bam recalibrado con el siguiente comando:
+. Obtener archivo bam recalibrado con el siguiente comando:
 gatk ApplyBQSR --reference ${HREFF} --input normal.dedup.bam --bqsr-recal-file normal.recal.table --output normal.recal.bam
 
-12. Describir las diferencias entre el archivo bam inicial y final (Los archivos se pueden explorar con samtools)
+. Describir las diferencias entre el archivo bam inicial y final (Los archivos se pueden explorar con samtools)
 
-13. Por cuestiones de espacio, borrar los archivos bam originales y los creados en pasos intermedios con el comando "rm"
+. Por cuestiones de espacio, borrar los archivos bam originales y los creados en pasos intermedios con el comando "rm"
 
-14. BONUS: Hacer un loop en bash para automatizar la ejecución de las herramientas ejecutadas.
+. BONUS: Hacer un loop en bash para automatizar la ejecución de las herramientas ejecutadas.
