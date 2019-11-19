@@ -60,7 +60,7 @@ Link to Allele Frequencies in Worldwide Populations HLA-A03:01
 -----------------------------------------------------------------------------------
 ```
 
-Ademas de la informacion sobre los parametros que se utilizaron para correr el programa tenemos la prediccion que muestra los siguientes campos:
+Ademas de la informacion sobre los parametros que se utilizaron para correr el programa tenemos la prediccion que muestra los siguientes campos:  
 **Pos:** La posicion del peptido en la secuencia si se corrio sobre un *fasta*.  
 **HLA:** El alelo al que se estra prediciendo la union.  
 **Peptide:** El peptido sobre el que se llevo a cabo la prediccion.  
