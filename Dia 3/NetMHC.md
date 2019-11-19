@@ -1,6 +1,6 @@
 # NetMHCpan 
 
-Esta herramienta predice union de peptidos a moleculas de MHC utilizando redes neuronales artificiales (ANN). El metodo esta entrenado con una combinacion de mas de 180,000 datos de union obtenidos a partir de espectrometria de masas que cubre 55 diferentes MHC de humanos y ratones. El set de datos de entrenamiento cuenta tambien con peptidos con mediciones de afinidad de union, los cuales cubren 172 moleculas de MHC de humano (HLA-A, B, C, E), raton (H-2), bovinos (BoLA), primates (Patr, Mamu, Gogo) y porcinos (SLA).
+Esta herramienta predice union de peptidos a moleculas de MHC utilizando redes neuronales artificiales (ANN). El metodo esta entrenado con una combinacion de mas de 180,000 datos de union obtenidos a partir de espectrometria de masas que cubre 55 diferentes MHC de humanos y ratones. El set de datos de entrenamiento cuenta tambien con peptidos con mediciones de afinidad de union, los cuales cubren 172 moleculas de MHC de humano (*HLA-A, B, C, E*), raton (*H-2*), bovinos (*BoLA*), primates (*Patr, Mamu, Gogo*) y porcinos (*SLA*).
 
 Una particularidad que caracteriza a netMHCpan es la integracion de las secuencias del peptido y del MHC durante el entrenamiento, lo que permite realizar asociaciones entre elementos de ambas moleculas. La ventaja principal de esto es que, asi como la herramienta aprende a predecir secuencias peptidicas con aminoacidos que nunca ha visto, tambien lo puede hacer en la secuencia del MHC, lo que le permite realizar predicciones acertadas para nuevas moleculas.
 
@@ -8,7 +8,7 @@ Tambien, gracias a la implementacion del algoritmo *nnaling* que se encarga de s
 
 La herramienta esta disponible desde su servidor web: [netMHCpan](http://www.cbs.dtu.dk/services/NetMHCpan/) o puede ser descargada de forma gratuita para usuarios academicos: [Descarga](http://www.cbs.dtu.dk/cgi-bin/nph-sw_request?netMHCpan).
 
-Si quieren investigar mas detalladamente pueden bajarse el paper de la herramienta [aca](www.cbs.dtu.dk/services/NetMHCpan/JI_netMHCpan-4.0.pdf).
+Si quieren investigar mas detalladamente pueden bajarse el paper de la herramienta [aca](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5679736).
 
 En la maquina virtual tenemos instalado ya el programa, se puede utilizar desde la consola de comandos tipeando **netMHCpan-4.0**. Si no le pasamos ningun argumento nos va a mostrar todas las opciones que contempla con una breve descripcion de cada una.
 
