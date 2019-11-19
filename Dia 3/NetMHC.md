@@ -22,8 +22,8 @@ Con esto podemos correr nuestra primera prediccion con netMHCpan
 netMHCpan-4.0 -a HLA-A01:01 secuencias.fasta
 ```
 
+La salida del programa es por consola pero podemos redireccionarla a un archivo con el simbolo mayor (**>**). A continuacion tenemos un ajemplo de salida:
 
-El
 ```
 # NetMHCpan version 4.0
 
@@ -59,4 +59,24 @@ Protein Gag_180_209. Allele HLA-A*03:01. Number of high binders 1. Number of wea
 Link to Allele Frequencies in Worldwide Populations HLA-A03:01
 -----------------------------------------------------------------------------------
 ```
+
+Ademas de la informacion sobre los parametros que se utilizaron para correr el programa tenemos la prediccion que muestra los siguientes campos:
+**Pos:** La posicion del peptido en la secuencia si se corrio sobre un *fasta*.
+**HLA:** El alelo al que se estra prediciendo la union.
+**Peptide:** El peptido sobre el que se llevo a cabo la prediccion.
+**Core:** La correccion de NNAlign para fijar el largo del peptido al core usual de los MHC clase I que es de 9 aminoacidos.
+**Of, Gp, Gl, Ip, Il,:** informacion sobre las inserciones, deleciones y offset incluidos para adecuar el peptido al core.
+**Icore:**
+**Identity:** El ID de la proteina de la cual proviene el peptido.
+**Score:** Puntaje provisto por el metodo, va de 0 a 1. Mientras mas cercano a 1 mayor afinidad predicha.
+**%Rank:** Correccion por alelo. Dado que diferentes alelos se unen con diferente afinidad a sus ligandos se calcula un score segun la posicion esperada del peptido predicho en un ranking que contenga 100.000 peptidos aleatorios predichos para ese alelo. Asi, peptidos con %Rank<2 son considerados *strong binders* aun si su score no es tan alto.
+**BindLevel:** Indica peptidos con alta afinidad (SB) y afinidad debil (WB). 
+
+Por ultimo tenemos un resumen de los resultados obtenidos.
+
+## Ejercicio
+
+A partir de los peptidos que encontramos interesantes a partir de nuestros estudios previos vamos a correr netMHCpan-4.0 para encontrar aquellos que tengan mas probabilidad de ser ligando de alguna de las moleculas de HLA que esten presentes en nuestra muestra.
+Estos peptidos podran luego ser utilizados para validacion.
+
 
