@@ -1,5 +1,6 @@
-1. Ejecutar MuPeXI para buscar neopéptidos inmunogénicos
+1. Ejecutar MuPeXI para buscar neopéptidos inmunogénicos:
 
+```Bash
 MuPeXI.py -v VCF --length PEP_LENGTH --alleles HLA --expression-type transcript --expression-file $expfile --make-fasta --config-file ${configPATH}config.ini --prefix $pref --out-dir ${outdir} --keep-temp
-
+```
 
