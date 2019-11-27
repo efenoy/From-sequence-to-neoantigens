@@ -74,9 +74,3 @@ Ademas de la informacion sobre los parametros que se utilizaron para correr el p
 
 Por ultimo tenemos un resumen de los resultados obtenidos.
 
-## Ejercicio
-
-A partir de los peptidos que encontramos interesantes a partir de nuestros estudios previos vamos a correr netMHCpan-4.0 para encontrar aquellos que tengan mas probabilidad de ser ligando de alguna de las moleculas de HLA que esten presentes en nuestra muestra.
-Estos peptidos podran luego ser utilizados para validacion.
-
-
