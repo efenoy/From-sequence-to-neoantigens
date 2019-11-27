@@ -1,8 +1,8 @@
-MuPeXI
+# MuPeXI
 
 Dada una lista de mutaciones somáticas (archivo VCF) como entrada, MuPeXI devuelve una tabla que contiene todos los péptidos mutados (neopéptidos) de longitudes definidas por el usuario, junto con datos relevantes para priorizar posibles neoepítopes.
 
-Ejecutaremos la herramienta desde el servidor http://www.cbs.dtu.dk/services/MuPeXI/. Para ejecutar por consola es posible descargar MuPeXI desde https://github.com/ambj/MuPeXI
+Ejecutaremos la herramienta desde el [servidor](http://www.cbs.dtu.dk/services/MuPeXI/). Para ejecutar por consola es posible descargar MuPeXI desde https://github.com/ambj/MuPeXI
 
 Utilizar los archivos de ejemplo, los HLAs HLA-A01:01,HLA-B08:01 y longitud de péptidos de 8-11
 
