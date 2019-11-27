@@ -13,7 +13,7 @@ ir a carpeta:
 /home/seminario/Escritorio/data/DNA/
 
 ```Bash
-gatk Mutect2 --reference ${HREFF} --I TCRBOA2-T-WEX-chr22.recal.bam -tumor TUMOR -I TCRBOA2-N-WEX-chr22.recal.bam -normal NORMAL -O TCRBOA2-T-WEX-chr22.vcf.gz --bam-output TCRBOA2-N-WEX-chr22.assembly.bam
+gatk Mutect2 --reference ${HREFF} --I TCRBOA2-T-WEX-chr22.recal.bam -tumor TUMOR -I TCRBOA2-N-WEX-chr22.recal.bam -normal NORMAL -O TCRBOA2-T-WEX-chr22.vcf.gz --bam-output TCRBOA2-N-WEX-chr22.assembly.bam --dbsnp $SREFF --cosmic CosmicCodingMuts_chr22.vcf
 ```
 
 2. Filtrar Variantes
